@@ -1,6 +1,6 @@
-FROM docker:20.10
+FROM alpine:edge
 
-RUN apk add bash
+RUN apk add bash docker
 
 COPY entrypoint.sh /entrypoint.sh
 
